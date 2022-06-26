@@ -1,0 +1,102 @@
+* {
+    color: #2B69D1;
+}
+
+p {
+    font-family: 'Golos';
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.overview {
+    display: flex;
+    margin-bottom: 160px;
+}
+
+.overview > .left-column {
+    padding-top: 48px;
+}
+
+.overview > .right-column {
+    padding-top: 30px;
+}
+
+.column {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.left-column {
+    width: calc((100% - 40px) / 4);
+}
+
+.left-column>p {
+    margin-bottom: 28px;
+}
+
+.right-column {
+    width: calc((100% - 40px) / 4 * 3);
+}
+
+.right-column>p {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-family: 'Prosto One';
+    font-size: 67.8263px;
+    line-height: 76px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.step-image:first-of-type {
+    margin-bottom: 5px;
+}
+
+.step {
+    margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+    .overview {
+        flex-direction: column;
+    }
+
+    .left-column {
+        padding-top: 20px;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column > p:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    .left-column > p:last-child {
+        margin-bottom: 0;
+    }
+
+    .overview {
+        margin-bottom: 94px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .title {
+        font-size: 38.8263px;
+        line-height: 41px;
+    }
+}

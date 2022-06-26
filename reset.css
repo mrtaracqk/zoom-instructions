@@ -1,0 +1,59 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+footer,
+header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
+    outline: none;
+    outline-color: transparent;
+    backface-visibility: hidden;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: flex;
+}
+
+strong {
+    font-weight: 700;
+}
+
+em {
+    font-style: italic;
+}
+
+body {
+    line-height: 1;
+    outline: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
