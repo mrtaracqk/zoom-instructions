@@ -8,3 +8,12 @@
          url('./fonts/Golos/Golos-Text_Regular.woff2') format('woff2'), 
          url('./fonts/Golos/Golos-Text_Regular.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Prosto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: fallback;
+    src: local('Prosto');
+    src: url('./fonts/Prosto/Prosto.ttf') format('truetype');
+}

@@ -12,22 +12,26 @@ p {
 .container {
     display: flex;
     flex-direction: column;
+    max-width: 1280px;
+    margin: auto;
     padding: 0 20px;
 }
 
+/* overview */
 .overview {
     display: flex;
     margin-bottom: 160px;
 }
 
-.overview > .left-column {
+.overview>.left-column {
     padding-top: 48px;
 }
 
-.overview > .right-column {
+.overview>.right-column {
     padding-top: 30px;
 }
 
+/* columns */
 .column {
     display: inline-flex;
     flex-direction: column;
@@ -49,8 +53,10 @@ p {
     margin-bottom: 20px;
 }
 
+/* text */
 .title {
-    font-family: 'Prosto One';
+    font-family: 'Prosto';
+    font-weight: 100;
     font-size: 67.8263px;
     line-height: 76px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -64,9 +70,71 @@ p {
     margin-bottom: 80px;
 }
 
+.desktop-br {
+    display: block;
+}
+
+.mobile-br {
+    display: none;
+}
+
+.image-desktop {
+    display: block;
+}
+
+.image-mobile {
+    display: none;
+}
+
+.step-link {
+    text-decoration: underline;
+    color: #D2CFE1;
+}
+
 @media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 16px 48px;
+    }
+
     .overview {
-        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .right-column {
+        padding-top: 20px;
+    }
+
+    .overview >  .right-column {
+        padding-top: 48px;
+    }
+
+    .overview >  .left-column {
+        padding-left: 43px;
+    }
+
+    .step > .right-column {
+        margin-left: 43px;
+    }
+
+    .step > .right-column > p {
+        max-width: calc(100% - 43px);
+    }
+
+    .step > .right-column > .step-image {
+        margin-left: -43px;
+    }
+
+    .step-image:first-of-type {
+        margin-bottom: 1px;
+    }
+
+    .step {
+        margin-bottom: 48px;
     }
 
     .left-column {
@@ -78,25 +146,36 @@ p {
         width: 100%;
     }
 
-    .left-column > p:not(:last-child) {
+    .left-column>p:not(:last-child) {
         margin-bottom: 16px;
     }
 
-    .left-column > p:last-child {
+    .left-column>p:last-child {
         margin-bottom: 0;
     }
 
     .overview {
-        margin-bottom: 94px;
-    }
-
-    p {
-        font-size: 14px;
-        line-height: 16px;
+        margin-bottom: 96px;
     }
 
     .title {
-        font-size: 38.8263px;
-        line-height: 41px;
+        font-size: 39px;
+        line-height: 48px;
+    }
+
+    .desktop-br {
+        display: none;
+    }
+
+    .mobile-br {
+        display: block;
+    }
+
+    .image-desktop {
+        display: none;
+    }
+    
+    .image-mobile {
+        display: block;
     }
 }
