@@ -102,7 +102,11 @@ p {
     .overview {
         flex-direction: column-reverse;
     }
-
+    
+    .overview:last-child {
+        margin-bottom: 40px;
+    }
+    
     p {
         font-size: 15px;
         line-height: 20px;
