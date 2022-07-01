@@ -23,6 +23,10 @@ p {
     margin-bottom: 160px;
 }
 
+.overview:last-child {
+        margin-bottom: 40px;
+    }
+
 .overview>.left-column {
     padding-top: 48px;
 }
