@@ -168,5 +168,6 @@ p {
     
     .image-mobile {
         display: block;
+        margin-bottom: 1px;
     }
 }
