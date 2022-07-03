@@ -11,8 +11,10 @@ p {
 
 hr {
     width: 100%;
-    size: 1;
-    color: #2B69D1;
+    border: none;
+    border-top: 2px solid #2b69d1;
+    opacity: 50%;
+    padding-bottom: 24px;
 }
 
 .container {
@@ -136,6 +138,10 @@ hr {
 
     .step {
         margin-bottom: 48px;
+    }
+    
+    .step:last-child {
+        margin-bottom: 16px;
     }
 
     .left-column {
