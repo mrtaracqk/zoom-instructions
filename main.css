@@ -14,7 +14,7 @@ hr {
     border: none;
     border-top: 2px solid #2b69d1;
     opacity: 25%;
-    padding-top: 48p;
+    padding-top: 72px;
     padding-bottom: 24px;
 }
 
@@ -115,6 +115,10 @@ hr {
     p {
         font-size: 15px;
         line-height: 20px;
+    }
+    
+    hr {
+        padding-bottom: 0px;
     }
 
     .right-column {
