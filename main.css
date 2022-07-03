@@ -9,6 +9,12 @@ p {
     line-height: 24px;
 }
 
+hr {
+    width: 100%;
+    size: 1;
+    color: #2B69D1;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -96,15 +102,11 @@ p {
 
 @media only screen and (max-width: 768px) {
     .container {
-        padding: 0 16px 48px;
+        padding: 0 16px 32px;
     }
 
     .overview {
         flex-direction: column-reverse;
-    }
-    
-    .overview:last-child {
-        margin-bottom: 40px;
     }
     
     p {
